@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.colored-text {
+    font-variant-caps: small-caps;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: $color-blue-07;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+        color: $color-blue-05;
+    }
+}

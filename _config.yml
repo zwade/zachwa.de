@@ -1,7 +1,7 @@
 # Site settings
-title: My Little Website
-tagline: "Changing the world, one uninspired quote at a time"
-url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+title: Zach Wade
+tagline: "Personal site of Zach Wade"
+url: "https://zachwa.de" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
 socialimg: /img/social.jpg # be sure to change this image
@@ -12,8 +12,7 @@ googleplus: gusername
 instagram: igusername
 
 # Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+email: "hello@zachwa.de" # This is my real email address. Please don't email me.
 
 # Use this for production
 #sass:

@@ -1,0 +1,40 @@
+@import "variables.scss";
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+
+    .dttw-post {
+        @include card(8px);
+
+        grid-template:
+            "title"   max-content
+            "date"    max-content
+            "content" 1fr
+            / 240px;
+
+        .title {
+            grid-area: title;
+            font-weight: bold;
+            color: #E53935;
+        }
+
+        .posted-at {
+            grid-area: date;
+            justify-self: end;
+            font-style: italic;
+            color: $color-slate-06;
+        }
+
+        .post-content {
+            overflow: hidden;
+
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0px;
+                padding: 0px;
+                font-size: 18px;
+            }
+        }
+    }
+}

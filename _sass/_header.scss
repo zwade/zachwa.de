@@ -1,0 +1,43 @@
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 64px;
+    background-color: rgba($color-slate-01, 0.8);
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        color: unset;
+
+        .logo-text {
+            font-size: 64px;
+            margin: 0px;
+            margin-right: 32px;
+            font-weight: lighter;
+        }
+
+        .logo-img {
+            max-width: 192px;
+            align-self: flex-end;
+        }
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+        row-gap: 8px;
+
+        a {
+            color: $color-slate-08;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

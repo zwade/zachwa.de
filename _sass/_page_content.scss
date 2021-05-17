@@ -1,0 +1,39 @@
+.page-content {
+    background: white;
+
+    .section {
+        display: grid;
+        grid-template:
+            "title      title            title"       max-content
+            "flair-left section-text     flair-right" max-content /
+            max-content minmax(1px, 1fr) max-content;
+
+        margin: 64px 16px;
+
+        .title {
+            grid-area: title;
+            justify-self: center;
+        }
+
+        .text {
+            grid-area: section-text;
+            font-size: 18px;
+        }
+
+        .flair-left {
+            grid-area: flair-left;
+        }
+
+        .flair-right {
+            grid-area: flair-right;
+        }
+
+        .flair-left, .flair-right {
+            width: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

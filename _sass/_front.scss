@@ -1,0 +1,15 @@
+.hero {
+    height: 200px;
+    background-size: cover;
+    background-image: url("/img/defcon_26_hero.jpg");
+}
+
+.headshot {
+    background-image: url("/img/twitter_prof.jpg");
+    width: 156px;
+    height: 156px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 128px;
+}

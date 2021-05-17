@@ -1,0 +1,19 @@
+<svg class="logo-img" viewbox="0 0 48 18">
+    <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" style="stop-color:#2C3ED0;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1D14A4;stop-opacity:1" />
+        </linearGradient>
+        <mask id="text-stroke" maskUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+            <text x="38" y="14.5" font-family="Quicksand" font-weight="700" stroke-width="2" stroke="black">3</text>
+        </mask>
+    </defs>
+    <g fill="url(#grad1)" class="zwad3" font-family="Quicksand" font-weight="700">
+        <text class="letter-1" x="0" y="12">z</text>
+        <text class="letter-2" x="7.5" y="12">w</text>
+        <text class="letter-3" x="19" y="12">a</text>
+        <text class="letter-4" x="28.5" y="12">d</text>
+        <text class="letter-5" x="38" y="14.5">3</text>
+    </g>
+</svg>

@@ -1,8 +1,38 @@
 ---
-layout: default
+layout: front
 title: "Zach Wade"
-fulltitle: "Zach Wade | Projects | Info | Contact"
+fulltitle: "Zach Wade | @zwad3 | Projects | Info | Contact"
 ---
 <section>
-  <h1>Zach Wade</h1>
+  <div class="about">
+    <div class="section">
+      <!-- <h3 class="title">About Me</h3> -->
+      <div class="text">
+        <p>
+          A computer scientist by trade and a hacker at heart, I live at the intersection of software development and information security.
+        </p>
+        <p>
+          I've helped start a company, <a href="https://zensors.com">Zensors</a>, whose productization of novel computer vision techniques earned it customers around the world.
+        </p>
+        <p>
+          A long-time member of CMU's hacking team, <a href="https://pwning.net">PPP</a>, I have won several international CTF competitions, including the <a href="https://www.cmu.edu/ini/news/2019/defcon-champion20191.html">world finals</a> three times.
+        </p>
+      </div>
+      <div class="flair-left">
+        <div class="headshot"></div>
+      </div>
+    </div>
+    <div class="section">
+      <h3 class="title">CTF Problems</h3>
+      <div class="text">
+        {% include problems.html %}
+      </div>
+    </div>
+    <div class="section">
+      <h3 class="title">Blog Posts</h3>
+      <div class="text">
+        {% include posts.html %}
+      </div>
+    </div>
+  </div>
 </section>

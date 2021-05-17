@@ -1,0 +1,31 @@
+@for $i from 1 through 5 {
+    $base: 1s;
+    $delta: 0.1s;
+
+    @keyframes lockin-#{$i} {
+        from {
+            transform: translateY(-3px);
+            opacity: 0;
+        }
+
+        #{(5 + $delta / $base * $i * 100) * 1%} {
+            transform: translateY(-3px);
+            opacity: 0;
+        }
+
+
+        90% {
+            transform: translateY(1px);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    .zwad3 .letter-#{$i} {
+        animation-duration: $base;
+        animation-name: lockin-#{$i};
+    }
+}

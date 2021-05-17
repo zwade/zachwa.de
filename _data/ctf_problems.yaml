@@ -1,0 +1,81 @@
+- name: The Watness III
+  competition: PlaidCTF 2021
+  link: https://github.com/zwade/watness-3
+  image: /img/watness-3.png
+  difficulty: 2
+  solves: 64
+  categories:
+  - web
+  - reversing
+  description: |
+    The Watness 3 is the final installment of the Watness Trilogy.
+    In this problem, players are given a WebGL implementation of the Watness that they must
+      work through and solve in order to get a flag.
+    The catch? The whole game is a single GLSL shader including graphics, movement, and the
+      puzzles themselves.
+- name: Wowza!
+  competition: PlaidCTF 2021
+  link: https://github.com/zwade/wowza
+  image: /img/wowza.png
+  difficulty: 4
+  solves: 6
+  categories:
+  - web
+  description: |
+    Wowza was a difficult web problem from PlaidCTF 2021.
+    Players were tasked with using a search engine's site-management console to attack the search engine itself.
+    The intended solution required exploiting a race condition in SQLite and a consistency bug in immutable.js.
+- name: Bithug
+  competition: PicoCTF 2021
+  link: https://github.com/zwade/bithug
+  image: /img/bithug.png
+  difficulty: 2
+  solves: 84
+  categories:
+  - web
+  description: |
+    Bithug is a simple clone of a popupular git server.
+    It implements basic functionality for creating repos, pushing and pulling, setting up webhooks, and even
+      sharing repos with other users.
+    Players are tasked with exploiting this functionality to get a flag stored in a hidden repository.
+- name: PGUI
+  competition: ASV CTF^2
+  link: https://github.com/zwade/pgui
+  image: /img/appsec_village.jpg
+  difficulty: 2.5
+  categories:
+  - web
+  - misc
+  description: |
+    Written for AppSec Village's CTF<sup>2</sup>, PGUI is a simple web interface for running Postgres queries
+      against a live database.
+    However, without credentials to access the database, all of your queries are aborted with no response.
+    Is there any way to read from the database?
+- name: The Watness II
+  competition: PlaidCTF 2020
+  link: https://github.com/zwade/the-watness-2
+  image: /img/watness-2.png
+  difficulty: 4
+  categories:
+  - reversing
+  description: |
+    The second, and most involved of the Watness problems, this one was a complete de-make of the Witness in
+      HyperCard, running on MacOS 9.
+    The problem reimplemented a set of Witness puzzles using an XCMD written in Apple Pascal, that players
+      have to reverse engineer to solve the problem.
+- name: Contrived Web Problem
+  competition: PlaidCTF 2020
+  link:
+- name: MiniCTF
+  competition: Standalone
+- name: Lambdash
+  competition: PicoCTF 2019
+- name: The .Wat ness
+  competition: PlaidCTF 2019
+- name: Everland
+  competition: PlaidCTF 2019
+- name: S-Exploitation
+  competition: PlaidCTF 2018
+- name: Datastore
+  competition: GoogleCTF 2017
+  link: https://github.com/google/google-ctf/tree/master/2017/quals/2017-misc-datastore

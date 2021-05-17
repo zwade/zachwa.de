@@ -1,0 +1,14 @@
+<div class="ctf-problem-list">
+    {% for problem in site.data.ctf_problems %}
+        <div class="ctf-problem" onclick="window.open('{{ problem.link }}', '_blank')">
+            <div class="background" style="background-image: url({{ problem.image }})"></div>
+            <div class="problem-title">{{ problem.name }}</div>
+            <div class="competition">{{ problem.competition }}</div>
+            <div class="categories">
+                {% for category in problem.categories %}
+                    <div class="category">{{ category }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+</div>

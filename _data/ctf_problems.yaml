@@ -39,7 +39,7 @@
       sharing repos with other users.
     Players are tasked with exploiting this functionality to get a flag stored in a hidden repository.
 - name: PGUI
-  competition: ASV CTF^2
+  competition: ASV CTF<sup>2</sup>
   link: https://github.com/zwade/pgui
   image: /img/appsec_village.jpg
   difficulty: 2.5
@@ -65,17 +65,79 @@
       have to reverse engineer to solve the problem.
 - name: Contrived Web Problem
   competition: PlaidCTF 2020
-  link:
+  link: https://github.com/zwade/contrived-web-problem
+  image: /img/contrived.png
+  difficulty: 4
+  categories:
+  - web
+  description: |
+    Modeled after a simple micro-service web application, Contrived Web Problem made use of an FTP-based
+      SSRF that allowed interfacing with the internal API in an unexpected manner.
 - name: MiniCTF
   competition: Standalone
+  link: https://github.com/zwade/minictf
+  image: /img/minictf.jpg
+  categories:
+    - web
+    - reversing
+    - misc
+  description: |
+    Originally run as an in-person workshop for students at Carnegie Mellon, MiniCTF is a collection of
+      small CTF problems mostly focused on web exploitation, designed to introduce new players to the
+      basic concepts.
 - name: Lambdash
   competition: PicoCTF 2019
+  image: /img/lambda.png
+  link: https://github.com/zwade/lambdash
+  categories:
+    - web
+  description: |
+    Lambdash is an online interpreter for a typed lambda calculus called System-F. In order to get the
+      flag, players have to break out of the limited execution provided by the language and call an
+      arbitrary function in the sandbox.
+  difficulty: 3.5
 - name: The .Wat ness
   competition: PlaidCTF 2019
+  image: /img/watness-1.png
+  link: https://github.com/zwade/the-watness-1
+  categories:
+    - web
+    - reversing
+  description: |
+    The .wat ness was an implementation of puzzles from the Witness along with some custom rules that
+      had been compiled to Web Assembly. In order to get the flag, players had to reverse engineer
+      the game to learn how the rules worked.
+  difficulty: 3
 - name: Everland
   competition: PlaidCTF 2019
+  image: /img/everland.png
+  link: https://github.com/zwade/everland
+  categories:
+    - misc
+  description: |
+    Everland was a little game where players had to fight an increasing number of enemies, culminating
+      in a final boss that can kill with a single hit. Players have to survive to the end of the game
+      and ultimately kill the final enemy to get the flag.
+  difficulty: 1.5
 - name: S-Exploitation
   competition: PlaidCTF 2018
+  link: https://github.com/zwade/s-exploitation
+  image: /img/parens.png
+  difficulty: 4.5
+  categories:
+    - web
+    - reversing
+  description: |
+    S-Exploitation was a two-part problem that requires players to compromise an oauth site in order
+      to bypass the CSP on the primary target.
 - name: Datastore
   competition: GoogleCTF 2017
   link: https://github.com/google/google-ctf/tree/master/2017/quals/2017-misc-datastore
+  image: /img/googlectf.png
+  difficulty: 2
+  categories:
+    - crypto
+    - misc
+  description: |
+    Written during my internship at Google, this only partially-completed problem ended up being
+      released and caused some major issues during the competition 🤷

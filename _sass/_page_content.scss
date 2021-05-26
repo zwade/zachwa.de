@@ -1,5 +1,8 @@
+@import "variables.scss";
+
 .page-content {
     background: white;
+    flex-grow: 1;
 
     .section {
         display: grid;
@@ -9,6 +12,16 @@
             max-content minmax(1px, 1fr) max-content;
 
         margin: 64px 16px;
+
+        @include mobile {
+            grid-template:
+                "title" max-content
+                "flair-left" max-content
+                "section-text" max-content
+                "flair-right" max-content
+                / minmax(1px, 1fr);
+            margin: 32px 16px;
+        }
 
         .title {
             grid-area: title;
@@ -34,6 +47,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @include mobile {
+                width: 100%;
+            }
         }
     }
 }

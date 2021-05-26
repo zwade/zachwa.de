@@ -1,0 +1,33 @@
+- name: Manus Dei
+  image: /img/manus-dei.png
+  description: |
+    A work in progress game that blends strategy with luck in a four player competition for control of the titular Manus Dei.
+    More details and first looks coming soon.
+- name: Aroma
+  link: https://devpost.com/software/aroma-2ywuar
+  image: /img/aroma.png
+  description: |
+    Aroma is a smart spice rack that can be used to precisely dispense spices hands free.
+    Just request what is needed and how much, and the system will automatically select the spice and dispense it for you.
+- name: Soustech
+  link: https://github.com/zwade/soustech/blob/master/report.pdf
+  image: /img/smash.png
+  description: |
+    A combination hardware and software research project, the goal of Soustech was to determine whether one could feasibly
+      use an array of sensors mounted above a stovetop to determine what food was being cooked, and whether it was cooking
+      correctly.
+- name: Shelf
+  link: https://devpost.com/software/shelf-gu2opn
+  image: /img/shelf.png
+  description: |
+    Shelf is an automatic inventory management system for the home.
+    Designed to be mounted inside a pantry or closet, it uses a roving camera to continuously track what items are
+      available, and which ones have since been removed or depleted.
+- name: Befungell
+  link: https://github.com/zwade/Befungell
+  image: /img/befungell.png
+  description: |
+    Befungell was a "research" project for SIGBOVIK 2017 that explored the practical applications of adding parallel
+      execution to the Befunge-93 programming language.
+    The project includes a proof-of-concept, a paper, and a talk.
+

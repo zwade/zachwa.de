@@ -1,0 +1,1 @@
+{%assign top = stars | ceil %}{%assign bottom = stars | floor %}{% for star in (1..bottom) %}🔥{% endfor %}{% if top != bottom %}<span style="font-size: 0.5em">🔥</span>{% endif %}

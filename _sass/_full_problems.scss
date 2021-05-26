@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+.full-problems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(256px, max-content);
+    row-gap: 16px;
+    column-gap: 16px;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    .full-problem {
+        @include large-card();
+
+        display: grid;
+        grid-template:
+            "image       title       title       title" max-content
+            "image       competition categories  difficulty" max-content
+            "description description description description" max-content
+            / 92px max-content max-content 1fr;
+        column-gap: 16px;
+
+
+        .problem-image {
+            width: 92px;
+            height: 92px;
+            grid-area: image;
+            background-size: auto 125%;
+            background-position: center;
+            border-radius: 92px;
+        }
+
+        .problem-name {
+            grid-area: title;
+            display: flex;
+            align-self: end;
+            font-size: 24px;
+        }
+
+        .competition, .categories, .difficulty {
+            align-self: center;
+            font-size: 12px;
+        }
+
+        .competition {
+            grid-area: competition;
+        }
+
+        .categories {
+            grid-area: categories;
+            display: flex;
+            flex-direction: row;
+
+            .category {
+                &:not(:last-child) {
+                    &::after {
+                        content: "•";
+                        font-weight: bold;
+                        padding: 0px 8px;
+                    }
+                }
+            }
+        }
+
+        .difficulty {
+            grid-area: difficulty;
+        }
+
+        .problem-description {
+            padding-top: 16px;
+            grid-area: description;
+        }
+    }
+}

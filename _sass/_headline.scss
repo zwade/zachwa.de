@@ -24,7 +24,7 @@
         }
     }
 
-    .zwad3 .letter-#{$i} {
+    .animated .zwad3 .letter-#{$i} {
         animation-duration: $base;
         animation-name: lockin-#{$i};
     }

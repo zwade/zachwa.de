@@ -1,4 +1,4 @@
-
+@import "variables.scss";
 
 .header {
     display: flex;
@@ -6,6 +6,11 @@
     justify-content: space-between;
     padding: 64px;
     background-color: rgba($color-slate-01, 0.8);
+
+    @include mobile {
+        flex-direction: column;
+        padding: 32px;
+    }
 
     .logo {
         display: flex;
@@ -17,11 +22,22 @@
             margin: 0px;
             margin-right: 32px;
             font-weight: lighter;
+
+            @include mobile {
+                font-size: 48px;
+                text-align: center;
+                margin-right: 0px;
+            }
         }
 
         .logo-img {
             max-width: 192px;
             align-self: flex-end;
+
+            @include mobile {
+                max-width: 128px;
+                align-self: center;
+            }
         }
     }
 
@@ -31,6 +47,13 @@
         justify-content: center;
         font-size: 18px;
         row-gap: 8px;
+
+        @include mobile {
+            margin-top: 16px;
+            flex-direction: row;
+            flex-flow: wrap;
+            column-gap: 16px;
+        }
 
         a {
             color: $color-slate-08;

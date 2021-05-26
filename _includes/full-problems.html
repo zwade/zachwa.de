@@ -1,0 +1,20 @@
+<div class="full-problems">
+    {% for problem in site.data.ctf_problems %}
+        <div class="full-problem">
+            <div class="problem-image" style="background-image: url({{ problem.image }})"></div>
+            <a class="problem-name" href="{{ problem.link }}">{{ problem.name }}</a>
+            <div class="competition">{{ problem.competition }}</div>
+            {% assign stars=problem.difficulty | default: 0 %}
+            {% comment %}
+            {% assign stars=problem.difficulty %}
+            {% endcomment %}
+            <div class="difficulty">{% include stars.html %}</div>
+            <div class="categories">
+                {% for category in problem.categories %}
+                    <div class="category">{{ category }}</div>
+                {% endfor %}
+            </div>
+            <div class="problem-description">{{ problem.description }}</div>
+        </div>
+    {% endfor %}
+</div>

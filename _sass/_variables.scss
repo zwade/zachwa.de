@@ -45,9 +45,24 @@ $google: #dd4b39 !default;
 
     transition: box-shadow 150ms ease-in-out;
     box-shadow: 0.5px 0.5px 8px 0.4px #00000070;
-    cursor: pointer;
+
+    &[onclick] {
+        cursor: pointer;
+    }
 
     &:hover {
         box-shadow: 0.5px 0.5px 12px 0.8px #00000090;
+    }
+}
+
+@mixin large-card() {
+    padding: 16px;
+    box-shadow: 0.5px 0.5px 8px 0.4px #00000070;
+    background-color: #f8f8f8;
+}
+
+@mixin mobile() {
+    @media (max-width: 1080px) {
+        @content
     }
 }

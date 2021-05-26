@@ -1,21 +1,18 @@
 @import "variables.scss";
 
-.ctf-problem-list {
+.project-list {
     display: flex;
     flex-direction: row;
     overflow: auto;
 
-    .ctf-problem {
+    .project {
         @include card(0px);
         position: relative;
         padding: 0px;
-        background-color: $color-slate-06;
 
         grid-template:
-            "margin"      64px
-            "name"        max-content
-            "competition" max-content
-            "categories"  max-content
+            "margin" 64px
+            "name" max-content
             / 256px;
 
 
@@ -31,45 +28,21 @@
             filter: brightness(75%);
             z-index: 0;
             transition: background-size 250ms ease-in-out;
+            background-color: $color-slate-01;
         }
 
-        .problem-title, .competition, .categories {
+        .project-title {
             z-index: 1;
             backdrop-filter: blur(4px);
             background-color: rgba(#ffffff, 0.5);
             color: #000000;
             align-self: center;
             text-align: center;
-        }
-
-        .problem-title {
             grid-area: name;
             z-index: 1;
             font-size: 24px;
             font-weight: 500;
             padding: 8px;
-        }
-
-        .competition {
-            grid-area: competition;
-        }
-
-        .categories {
-            grid-area: categories;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            padding: 8px;
-
-            .category {
-                &:not(:last-child) {
-                    &::after {
-                        content: "•";
-                        font-weight: bold;
-                        padding: 8px;
-                    }
-                }
-            }
         }
     }
 }

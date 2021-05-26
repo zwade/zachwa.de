@@ -3,7 +3,7 @@
 .full-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 256px;
+  grid-auto-rows: minmax(256px, max-content);
   row-gap: 16px;
   column-gap: 16px;
 

@@ -22,6 +22,16 @@
             / 92px max-content max-content 1fr;
         column-gap: 16px;
 
+        @include mobile {
+            grid-template:
+                "image       title" max-content
+                "image       competition" max-content
+                "image       categories" max-content
+                "image       difficulty" max-content
+                "description description" max-content
+                / 92px 1fr;
+        }
+
 
         .problem-image {
             width: 92px;

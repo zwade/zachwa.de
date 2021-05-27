@@ -4,7 +4,7 @@ tagline: "Personal site of Zach Wade"
 url: "https://zachwa.de" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
-socialimg: /img/twitter_prof.jpg # be sure to change this image
+socialimg: /img/something_else.jpg # be sure to change this image
 twitter: zwad3
 github: zwade
 

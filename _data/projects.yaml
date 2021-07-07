@@ -1,3 +1,10 @@
+- name: Kill Switch
+  link: https://github.com/zwade/kill-switch
+  image: /img/kill-switch.png
+  description: |
+    A chrome extension that monitors websites' usage of sensitive APIs, and provides users with the option to be notified
+    or prompted when the use occurs. The main focus of Kill Switch is to give users better control over potential privacy
+    leaks.
 - name: Manus Dei
   image: /img/manus-dei.png
   description: |

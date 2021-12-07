@@ -1,3 +1,11 @@
+- name: Hypatia
+  link: https://hyp.so
+  image: /img/hyp.png
+  description: |
+    Hypatia is a training platform focused on developing deep technical skills. By blending cloud and on-premise offerings
+    into a single product, customers can train their employees on proprietary technologies easily and securely. Hypatia is
+    available for free through our open source client (found <a href="https://github.com/zwade/hypatia">here</a>), or via
+    a subscription to the cloud service.
 - name: Kill Switch
   link: https://github.com/zwade/kill-switch
   image: /img/kill-switch.png

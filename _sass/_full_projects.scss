@@ -16,22 +16,34 @@
 
     display: grid;
     grid-template:
-        "image title"             92px
+        "image title"             max-content
+        "image link"              max-content
         "description description" max-content
         / 92px 1fr;
 
 
     .project-image {
+        grid-area: image;
         background-size: auto 125%;
         background-position: center;
         border-radius: 92px;
+        height: 92px;
     }
 
     .project-name {
+        grid-area: title;
         display: flex;
         align-items: center;
         padding: 16px;
+        padding-bottom: 0px;
         font-size: 24px;
+    }
+
+    .project-link {
+        grid-area: link;
+        font-size: 16px;
+        padding-left: 16px;
+        word-break: break-all;
     }
 
     .project-description {

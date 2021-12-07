@@ -2,7 +2,8 @@
     {% for project in site.data.projects %}
         <div class="full-project">
             <div class="project-image" style="background-image: url({{ project.image }})"></div>
-            <a class="project-name" href="{{ project.link }}">{{ project.name }}</a>
+            <div class="project-name">{{ project.name }}</div>
+            <a class="project-link" href="{{ project.link }}">{{ project.link | remove_first: "https://" | remove_first: "http://" }}</a>
             <div class="project-description">{{ project.description }}</div>
         </div>
     {% endfor %}

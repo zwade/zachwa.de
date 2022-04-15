@@ -1,3 +1,29 @@
+- name: Yet Another Calculator App
+  competition: PlaidCTF 2022
+  link: https://github.com/zwade/yaca
+  image: /img/yaca.jpg
+  difficulty: 3
+  solves: 20
+  categories:
+  - web
+  description: |
+    YACA is a simple calculator app. Type in a mathematical expression, and it will instantly
+    generate the result. What's more, if you use variables in your expression you can adjust them at will
+    to see how it affects the result.
+    Designed to introduce players to EcmaScript modules, YACA also challenges them to get a better understanding of Chrome's internals.
+- name: Live Art
+  competition: PicoCTF 2022
+  link: https://github.com/zwade/live-art
+  image: /img/live-art.png
+  difficulty: 3.5
+  solves: 8
+  categories:
+  - web
+  description: |
+    Nothing's more fun than drawing for an audience! Live Art lets you stream your drawing to the world
+    (or it did, before PeerJS suddenly died).
+    Live Art presents a unique taste on React-based XSS, and makes players dig deep into how React's magic
+    sauce actually works.
 - name: The Watness III
   competition: PlaidCTF 2021
   link: https://github.com/zwade/watness-3

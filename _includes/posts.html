@@ -1,7 +1,7 @@
 <div class="posts">
-    {% for post in site.data.dttw_posts %}
+    {% for post in site.data.all_posts %}
         <!-- for what it's worth, I hate this too. I really should move to SSR react, but i'm feeling lazy -->
-        <div class="dttw-post" onclick="window.open('https://dttw.tech{{ post.url }}', '_blank')">
+        <div class="all-post kind-{{ post.kind }}" onclick="window.open('{{ post.url }}', '_blank')">
             <div class="title">{{ post.title }}</div>
             <div class="posted-at">{{ post.timestamp | date: "%b %d %Y" }}</div>
             <div class="post-content">{{ post.html }}</div>

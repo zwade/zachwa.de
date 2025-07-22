@@ -5,7 +5,7 @@
     flex-direction: row;
     overflow-x: auto;
 
-    .dttw-post {
+    .all-post {
         @include card(8px);
 
         grid-template:
@@ -17,7 +17,14 @@
         .title {
             grid-area: title;
             font-weight: bold;
+            justify-self: start;
             color: #E53935;
+        }
+
+        &.kind-wish {
+            .title {
+                color: #4A3AFF;
+            }
         }
 
         .posted-at {
@@ -25,15 +32,22 @@
             justify-self: end;
             font-style: italic;
             color: $color-slate-06;
+            margin-bottom: 8px;
         }
 
         .post-content {
             overflow: hidden;
+            font-size: 16px;
 
             h1, h2, h3, h4, h5, h6 {
                 margin: 0px;
                 padding: 0px;
                 font-size: 18px;
+            }
+
+            p {
+                margin: 0px;
+                padding: 0px;
             }
         }
     }

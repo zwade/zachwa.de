@@ -50,8 +50,26 @@ $google: #dd4b39 !default;
     box-shadow: 0.5px 0.5px 8px 0.4px #00000070;
     overflow: hidden;
 
+    position: relative;
+
     &[onclick] {
         cursor: pointer;
+    }
+
+    // Title link stretched over the card; onclick covers what it can't reach
+    .card-link {
+        color: inherit;
+
+        &:hover {
+            color: inherit;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+        }
     }
 
     &:hover {

@@ -1,8 +1,8 @@
 <div class="project-list content-list">
     {% for project in site.data.projects %}
-    <div class="project" {% if project.link %} onclick="window.open('{{ project.link }}', '_blank')" {% endif %}>
+    <div class="project" {% if project.link %}onclick="if (!event.target.closest('a')) window.open('{{ project.link }}', '_blank')"{% endif %}>
         <div class="background" style="background-image: url({{ project.image }})"></div>
-        <div class="project-title">{{ project.name }}</div>
+        <div class="project-title">{% if project.link %}<a class="card-link" href="{{ project.link }}" target="_blank" rel="noopener">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}</div>
     </div>
     {% endfor %}
 </div>

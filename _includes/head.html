@@ -13,7 +13,9 @@
 	<meta name="description" content="{{ d }}">
 	<meta name="author" content="{{ site.title }}">
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-	<link rel="icon" type="image/png" href="/favicon.png">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	{% for profile in site.data.profiles %}
 	<link rel="me" href="{{ profile }}">
 	{% endfor %}

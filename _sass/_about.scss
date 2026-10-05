@@ -1,0 +1,80 @@
+@import "variables.scss";
+
+$band-0: #2C3ED0;
+$band-1: #1D14A4;
+
+.page-content .about-page {
+    .section {
+        margin: 0;
+        padding: 48px 40px;
+        position: relative;
+        overflow: hidden;
+
+        @include mobile {
+            margin: 0;
+            padding: 32px 20px;
+        }
+
+        .text {
+            max-width: 44rem;
+            line-height: 1.65;
+        }
+    }
+
+    .lede .text {
+        font-size: 21px;
+    }
+
+    .tint {
+        background: #f2f4fb;
+    }
+
+    // Accent band, after compassrx.com's circle segments
+    .band {
+        background: linear-gradient(135deg, $band-0, $band-1);
+        color: #fafafa;
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: white;
+            opacity: 0.08;
+            pointer-events: none;
+        }
+
+        &::before {
+            width: 420px;
+            height: 420px;
+            top: -180px;
+            right: -120px;
+        }
+
+        &::after {
+            width: 640px;
+            height: 640px;
+            bottom: -520px;
+            left: -200px;
+        }
+
+        .title, .text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .title::after {
+            background: rgba(white, 0.7);
+        }
+
+        a {
+            color: #c9d2ff;
+            text-decoration: underline;
+            text-decoration-color: rgba(#c9d2ff, 0.4);
+            text-underline-offset: 3px;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}

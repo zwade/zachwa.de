@@ -25,9 +25,24 @@
             margin: 32px 16px;
         }
 
-        .title {
+        // Direct child only, so card titles inside sections are unaffected
+        > .title {
             grid-area: title;
-            justify-self: center;
+            justify-self: start;
+            margin: 0 0 20px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 48px;
+                height: 4px;
+                margin-top: 8px;
+                border-radius: 2px;
+                background: linear-gradient(90deg, #2C3ED0, $color-blue-05);
+            }
         }
 
         .text {

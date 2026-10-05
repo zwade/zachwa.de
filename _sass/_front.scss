@@ -7,12 +7,9 @@
 }
 
 .headshot {
-    background-image: url("/img/something_else.jpg");
     width: 156px;
     height: 156px;
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
     border-radius: 128px;
 
     @include mobile {

@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "ProfilePage",
+	"url": "{{ site.url }}/",
+	"mainEntity": {
+		"@type": "Person",
+		"@id": "{{ site.url }}/#person",
+		"name": "{{ site.title }}",
+		"alternateName": ["{{ site.alt_name }}", "zwad3"],
+		"givenName": "Zachary",
+		"familyName": "Wade",
+		"url": "{{ site.url }}/",
+		"image": "{{ site.url }}{{ site.headshot }}",
+		"description": "{{ site.tagline }}",
+		"jobTitle": "Co-founder & CTO",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "CompassRx",
+			"url": "https://compassrx.com"
+		},
+		"alumniOf": {
+			"@type": "CollegeOrUniversity",
+			"name": "Carnegie Mellon University",
+			"sameAs": "https://www.wikidata.org/wiki/Q190080"
+		},
+		"memberOf": {
+			"@type": "Organization",
+			"name": "Plaid Parliament of Pwning",
+			"url": "https://pwning.net",
+			"sameAs": "https://www.wikidata.org/wiki/Q141642077"
+		},
+		"knowsAbout": ["Computer security", "Capture the flag", "Compilers", "Programming languages", "Pharmacy technology"],
+		"sameAs": {{ site.data.profiles | jsonify }}
+	}
+}
+</script>

@@ -1,3 +1,23 @@
+- name: Effectual
+  link: https://www.effectualjs.com
+  image: /img/effectual.svg
+  description: |
+    An educational web development framework, designed for learning how modern web apps are built.
+    Merges the ease of React and the performance of Vue for a reactivity framework that brings something new to the conversation.
+    The source is available <a href="https://github.com/zwade/effectual">on GitHub</a>.
+- name: Piqued
+  link: https://github.com/zwade/piqued
+  image: /img/piqued.png
+  description: |
+    A query compiler, typed query builder, and language server for Postgres and TypeScript. Piqued lets you write plain SQL while still getting typechecking,
+      custom type parsing, and the conveniences of an ORM.
+- name: RuuLang
+  link: https://github.com/zwade/ruulang
+  image: /img/ruulang.png
+  description: |
+    A DSL for describing access policies. Rather than listing permissions per role, RuuLang describes the relationships
+      traversed to reach an entity and the attributes acquired along the way. The reference implementation is written in
+      Rust and ships with a VS Code extension.
 - name: Hypatia
   link: https://hyp.so
   image: /img/hyp.png

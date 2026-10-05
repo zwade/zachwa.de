@@ -1,3 +1,14 @@
+- name: ChatPPP
+  competition: PlaidCTF 2025
+  link: https://github.com/zwade/chatppp
+  image: /img/chatppp.png
+  difficulty: 4
+  solves: 5
+  categories:
+  - web
+  description: |
+    ChatPPP is a chat app built on <a href="https://www.effectualjs.com">Effectual</a>. Players need to find an XSS
+    they can send to a victim and use it to read data out of the victim's localStorage.
 - name: Yet Another Calculator App
   competition: PlaidCTF 2022
   link: https://github.com/zwade/yaca

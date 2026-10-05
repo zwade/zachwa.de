@@ -41,10 +41,14 @@ $google: #dd4b39 !default;
     margin: 16px;
     padding: $padding;
 
+    flex-shrink: 0;
     display: grid;
 
     transition: box-shadow 150ms ease-in-out;
+    border-radius: 1rem;
+    corner-shape: squircle;
     box-shadow: 0.5px 0.5px 8px 0.4px #00000070;
+    overflow: hidden;
 
     &[onclick] {
         cursor: pointer;
@@ -52,6 +56,13 @@ $google: #dd4b39 !default;
 
     &:hover {
         box-shadow: 0.5px 0.5px 12px 0.8px #00000090;
+    }
+
+    .background {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 

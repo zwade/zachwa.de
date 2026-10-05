@@ -20,6 +20,10 @@
             .background {
                 background-size: auto 115%;
             }
+
+            .project-title {
+                background-color: rgba(#ffffff, 0.7);
+            }
         }
 
         .background {
@@ -34,6 +38,8 @@
 
         .project-title {
             z-index: 1;
+            transition: background-color 250ms ease-in-out;
+
             backdrop-filter: blur(4px);
             background-color: rgba(#ffffff, 0.5);
             color: #000000;

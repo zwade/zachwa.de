@@ -4,27 +4,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 
-	{% if is_index %}{% assign t = site.fulltitle %}{% elsif page.fulltitle %}{% assign t = page.fulltitle %}{% else %}{% assign t = page.title | append: " | " | append: site.title %}{% endif %}
-	{% if page.excerpt %}{% assign d = page.excerpt | strip_html | strip %}{% else %}{% assign d = site.tagline %}{% endif %}
+	{% if is_index %}{% assign t = site.fulltitle %}{% elsif page.fulltitle %}{% assign t = page.fulltitle %}{% else
+	%}{% assign t = page.title | append: " | " | append: site.title %}{% endif %}
+	{% if page.excerpt %}{% assign d = page.excerpt | strip_html | strip %}{% else %}{% assign d = site.tagline %}{%
+	endif %}
 	{% if page.image %}{% assign img = page.image %}{% else %}{% assign img = site.socialimg %}{% endif %}
 	<title>{{ t }}</title>
 	<meta name="description" content="{{ d }}">
 	<meta name="author" content="{{ site.title }}">
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
 	<link rel="icon" type="image/png" href="/favicon.png">
-	{% for profile in site.data.profiles %}<link rel="me" href="{{ profile }}">
+	{% for profile in site.data.profiles %}
+	<link rel="me" href="{{ profile }}">
 	{% endfor %}
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="{% if is_index %}profile{% else %}website{% endif %}"/>
-	<meta property="og:title" content="{{ t }}"/>
-	<meta property="og:description" content="{{ d }}"/>
-	<meta property="og:image" content="{{ site.url }}{{ img }}"/>
-	<meta property="og:image:alt" content="{{ site.title }}"/>
-	<meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}"/>
-	<meta property="og:site_name" content="{{ site.title }}"/>
-	{% if is_index %}<meta property="profile:first_name" content="Zachary"/>
-	<meta property="profile:last_name" content="Wade"/>{% endif %}
+	<meta property="og:type" content="{% if is_index %}profile{% else %}website{% endif %}" />
+	<meta property="og:title" content="{{ t }}" />
+	<meta property="og:description" content="{{ d }}" />
+	<meta property="og:image" content="{{ site.url }}{{ img }}" />
+	<meta property="og:image:alt" content="{{ site.title }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
+	{% if is_index %}
+	<meta property="profile:first_name" content="Zachary" />
+	<meta property="profile:last_name" content="Wade" />{% endif %}
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -37,8 +41,9 @@
 	{% if is_index %}{% include person.html %}{% endif %}
 
 	<!-- CSS & fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300;500;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="/css/app.css">
 	<!-- Put your fonts here -->
 
